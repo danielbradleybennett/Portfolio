@@ -34,7 +34,8 @@ body {
 }
 
 ol, ul {
-	list-style: none;
+	list-style: disc;
+	padding-left: 2em;
 }
 
 blockquote, q {
@@ -1822,7 +1823,7 @@ input, select, textarea {
 		}
 
 		.github--img{
-			width: 40px;
+			width: 50px;
 			margin-bottom: 7px;
 		
 		}
@@ -1844,20 +1845,20 @@ input, select, textarea {
 		}
 		
 		.git--label{
-			margin-top: 5px;
+			margin-top: 12px;
 			margin-right: 12px;
 		}
 		.email--label{
 			margin-top: 15px;
 			margin-right:18px;
 		}
-		.linkedin--label{
+	
 
-		}
+		
 		.email--img{
-			width: 30px;
+			width: 40px;
 			margin-right: 10px;
-			margin-top: 15px;
+			margin-top: 10px;
 		}
 		.email--container{
 			display: flex;
@@ -1865,45 +1866,41 @@ input, select, textarea {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
+		.icons{
+			list-style-type:none;
+		}
+
+		.frontend--images{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			justify-content: space-evenly;
+
+		}
+
+		.backend--images{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			justify-content: space-evenly;
+
+		}
+
+		button{
+			font-size: 16px;
+
+
+		}
+
+		
+
+
 		
 	
 
-/* Icon */
 
-	/* .icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		} */
 
 /* Image */
 
@@ -2018,9 +2015,10 @@ input, select, textarea {
 			object-position: 25% 75%;
 		}
 
-		.image img {
+		.image img{
 			border-radius: 5px;
 			display: block;
+			width: 300px;
 		}
 
 		.image.left {
@@ -2068,46 +2066,6 @@ input, select, textarea {
 				border-radius: 0;
 			}
 
-/* List */
-
-	/* ol {
-		list-style: decimal;
-		margin: 0 0 2.25em 0;
-		padding-left: 1.25em;
-	}
-
-		ol li {
-			padding-left: 0.25em;
-		}
-
-	ul {
-		list-style: disc;
-		margin: 0 0 2.25em 0;
-		padding-left: 1em;
-	}
-
-		ul li {
-			padding-left: 0.5em;
-		}
-
-		ul.alt {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.alt li {
-				border-top: solid 2px #f4f4f4;
-				padding: 0.5em 0;
-			}
-
-				ul.alt li:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-
-	dl {
-		margin: 0 0 2.25em 0;
-	} */
 
 /* Actions */
 
@@ -2275,26 +2233,6 @@ input, select, textarea {
 				width: 2.5em;
 			}
 
-/* Icons */
-
-	/* ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0 1em 0 0;
-		}
-
-			ul.icons li:last-child {
-				padding-right: 0 !important;
-			}
-
-			ul.icons li .icon:before {
-				font-size: 1.25em;
-			} */
 
 /* Table */
 
@@ -2367,40 +2305,7 @@ input, select, textarea {
 
 
 	
-/* Features */
 
-	.features article {
-		border-top: solid 3px #f4f4f4;
-		margin-bottom: 2.25em;
-		padding-top: 2.25em;
-	}
-
-		.features article:first-child {
-			border-top: 0;
-			padding-top: 0;
-		}
-
-		.features article .image {
-			display: inline-block;
-			padding-right: 2.5em;
-			vertical-align: middle;
-			width: 48%;
-		}
-
-			.features article .image img {
-				display: block;
-				width: 100%;
-			}
-
-		.features article .inner {
-			display: inline-block;
-			vertical-align: middle;
-			width: 50%;
-		}
-
-			.features article .inner > :last-child {
-				margin-bottom: 0;
-			}
 
 /* Header */
 
@@ -2426,6 +2331,9 @@ input, select, textarea {
 		top: 0;
 		width: 23em;
 		right: 0;
+		background-image: url("/images/banner.jpg");
+		background-size: cover;
+	
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2692,6 +2600,7 @@ input, select, textarea {
 				-ms-transform: translateX(23em);
 				transform: translateX(23em);
 				right: 0;
+			
 			}
 
 				#header > footer {
@@ -2865,6 +2774,10 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
+
+			ul li { 
+				display: list-item;
+		}
 
 		/* Header */
 
